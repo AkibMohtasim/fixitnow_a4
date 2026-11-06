@@ -1,0 +1,16 @@
+enum UserRoles {
+  CUSTOMER
+  TECHNICIAN
+  ADMIN
+}
+
+enum ActiveStatus {
+  ACTIVE
+  BLOCKED
+}
+
+enum ServiceAra {
+  DHAKA
+  CHITTAGONG
+  BARISAL
+}
