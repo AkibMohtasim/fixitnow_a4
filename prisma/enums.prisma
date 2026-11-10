@@ -14,3 +14,16 @@ enum ServiceAra {
   CHITTAGONG
   BARISAL
 }
+
+enum PricingType {
+  FIXED
+  HOURLY
+}
+
+enum BookingStatus {
+  PENDING
+  APPROVED
+  DECLINED
+  CANCELLED
+  COMPLETED
+}

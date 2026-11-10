@@ -1,0 +1,15 @@
+model Availability {
+  id           String     @unique @default(uuid())
+  technicianId String     @unique
+  technician   Technician @relation(fields: [technicianId], references: [id])
+  startTime    DateTime
+  endTime      DateTime
+  isAvaliable  Boolean    @default(true)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @default(now())
+
+  booking Booking[]
+
+  @@index([technicianId])
+  @@map("availability")
+}
