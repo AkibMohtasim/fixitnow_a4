@@ -12,7 +12,7 @@ model Booking {
   scheduleEnd         DateTime
   customerNotes       String?
   price               Decimal
-  status              BookingStatus @default(PENDING)
+  status              BookingStatus @default(REQUESTED)
   declineReason       String?
   cancellationReason  String?
   acceptedAt          DateTime?
@@ -21,6 +21,9 @@ model Booking {
   cancelledAt         DateTime?
   createdAt           DateTime
   updatedAt           DateTime
+
+  payment Payment[]
+  review  Review[]
 
   @@index([availabilityId])
   @@index([serviceId])

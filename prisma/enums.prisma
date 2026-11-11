@@ -21,9 +21,11 @@ enum PricingType {
 }
 
 enum BookingStatus {
-  PENDING
-  APPROVED
+  REQUESTED
+  ACCEPTED
   DECLINED
-  CANCELLED
+  PAID
+  IN_PROGRESS
   COMPLETED
+  CANCELLED
 }
